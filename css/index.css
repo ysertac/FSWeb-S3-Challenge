@@ -373,14 +373,12 @@ footer nav {
 
 /* mobile media query */
 @media (max-width: 428px) {
-  a {
-    font-size: 4rem;
-  }
   /* header section */
-  h1 {
+  .header-title {
+    width: 75%;
+    margin: 0 auto;
     text-align: center;
-    font-size: 5rem;
-    margin: 3rem 3rem;
+    font-size: 4rem;
   }
 
   header nav {

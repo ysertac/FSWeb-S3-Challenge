@@ -170,6 +170,7 @@ h3 {
 
 h4 {
   font-size: 4rem;
+  font-weight: 600;
 }
 
 p,
@@ -281,10 +282,6 @@ header .social {
   width: 25%;
 }
 
-.content p {
-  font-size: 2rem;
-}
-
 /* footer section */
 footer {
   width: 100%;
@@ -340,6 +337,10 @@ footer nav {
 /* mobile media query */
 @media (max-width: 428px) {
   /* header section */
+  h1 {
+    padding-top: 2rem;
+  }
+
   .header-title {
     width: 75%;
     margin: 0 auto;
@@ -347,9 +348,75 @@ footer nav {
     font-size: 4rem;
   }
 
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
   /* menu */
+
   .menu {
+    width: 100%;
+    height: auto;
     background-image: none;
+  }
+
+  .menu-container {
+    background-color: rgb(225, 239, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 9rem;
+  }
+
+  .menu h2 {
+    color: rgb(0, 4, 17);
+    padding-top: 8rem;
+    width: 80%;
+    border-bottom: 20px solid rgb(0, 4, 17);
+  }
+
+  .menu h3 {
+    font-size: 4rem;
+    color: rgb(0, 4, 17);
+    border: 5px solid rgb(0, 4, 17);
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .menu-section {
+    width: 80%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 5px solid black;
+    padding-bottom: 2rem;
+  }
+
+  .menu-section .menu-item:last-child {
+    border: none;
+  }
+
+  .menu-item h4 {
+    font-size: 3rem;
+    display: inline-block;
+    width: 70%;
+    margin-top: 2rem;
+    color: rgb(0, 4, 17);
+  }
+  .menu-item p {
+    width: 100%;
+    color: rgb(0, 4, 17);
+  }
+
+  .menu-item h4:nth-child(2n) {
+    width: 25%;
   }
 
   /* footer section */
@@ -357,5 +424,49 @@ footer nav {
     height: auto;
     padding-top: 2.5vh;
     font-size: 2rem;
+  }
+
+  .top-footer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .top-footer form {
+    width: 100%;
+  }
+
+  .top-footer form p {
+    margin: 0 auto;
+  }
+
+  .top-footer form input,
+  .top-footer form button {
+    display: block;
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .top-footer nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .top-footer nav a {
+    font-size: 3.5rem;
+  }
+
+  .copyright {
+    margin-top: 2rem;
+  }
+
+  .copyright p {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
   }
 }
